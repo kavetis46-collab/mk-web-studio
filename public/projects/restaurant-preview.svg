@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad-rest" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140a05"/>
+      <stop offset="50%" stop-color="#1a0f08"/>
+      <stop offset="100%" stop-color="#0a0502"/>
+    </linearGradient>
+    <linearGradient id="warm-orange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb923c"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+    <filter id="glow-r" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg-grad-rest)"/>
+  <circle cx="950" cy="220" r="280" fill="#ea580c" opacity="0.1" filter="url(#glow-r)"/>
+  <circle cx="200" cy="500" r="200" fill="#f59e0b" opacity="0.08" filter="url(#glow-r)"/>
+
+  <!-- Browser Frame -->
+  <rect x="50" y="40" width="1100" height="670" rx="16" fill="#130c07" stroke="rgba(251,146,60,0.2)" stroke-width="1.5"/>
+
+  <!-- Header -->
+  <rect x="50" y="40" width="1100" height="48" rx="16" fill="#1c110b"/>
+  <rect x="50" y="72" width="1100" height="16" fill="#1c110b"/>
+  <line x1="50" y1="88" x2="1150" y2="88" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <circle cx="80" cy="64" r="6" fill="#ef4444" opacity="0.8"/>
+  <circle cx="102" cy="64" r="6" fill="#eab308" opacity="0.8"/>
+  <circle cx="124" cy="64" r="6" fill="#22c55e" opacity="0.8"/>
+
+  <rect x="360" y="52" width="480" height="24" rx="6" fill="#0d0704" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="600" y="68" fill="#a8a29e" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">preview.mkwebstudio.com/concepts/saffron-and-sage</text>
+
+  <!-- Concept Badge -->
+  <rect x="1030" y="52" width="90" height="24" rx="12" fill="rgba(251,146,60,0.15)" stroke="rgba(251,146,60,0.4)" stroke-width="1"/>
+  <circle cx="1044" cy="64" r="3.5" fill="#fb923c"/>
+  <text x="1080" y="68" fill="#fb923c" font-family="system-ui, sans-serif" font-size="10" font-weight="600" text-anchor="middle">CONCEPT</text>
+
+  <!-- Restaurant Nav -->
+  <text x="90" y="135" fill="#fef3c7" font-family="'Cinzel', serif, Georgia" font-size="19" font-weight="700" letter-spacing="1.5">SAFFRON &amp; SAGE</text>
+  <text x="800" y="134" fill="#d6d3d1" font-family="system-ui, sans-serif" font-size="12">THE MENU</text>
+  <text x="890" y="134" fill="#d6d3d1" font-family="system-ui, sans-serif" font-size="12">STORY</text>
+  <rect x="970" y="118" width="150" height="32" rx="6" fill="#ea580c"/>
+  <text x="1045" y="138" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">RESERVE A TABLE</text>
+
+  <!-- Hero Content inside mock -->
+  <text x="90" y="200" fill="#fb923c" font-family="system-ui, sans-serif" font-size="12" font-weight="600" letter-spacing="2">CONTEMPORARY ARTISANAL CUISINE</text>
+  <text x="90" y="250" fill="#ffffff" font-family="system-ui, sans-serif" font-size="38" font-weight="800" letter-spacing="-0.5">WHERE FLAVORS</text>
+  <text x="90" y="295" fill="url(#warm-orange)" font-family="system-ui, sans-serif" font-size="38" font-weight="800" letter-spacing="-0.5">BECOME MEMORIES.</text>
+  <text x="90" y="335" fill="#a8a29e" font-family="system-ui, sans-serif" font-size="14">Farm-to-table organic ingredients, master crafted wine pairings, and ambient private dining.</text>
+
+  <!-- Reservation Box Mock -->
+  <rect x="680" y="170" width="440" height="240" rx="14" fill="#20130b" stroke="rgba(251,146,60,0.25)" stroke-width="1.5"/>
+  <text x="710" y="205" fill="#fef3c7" font-family="system-ui, sans-serif" font-size="16" font-weight="700">Online Table Reservation</text>
+  <text x="710" y="225" fill="#a8a29e" font-family="system-ui, sans-serif" font-size="11">Experience an unforgettable evening:</text>
+  <rect x="710" y="240" width="180" height="34" rx="6" fill="#120904" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="725" y="262" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="11">2 Guests 👥 ▾</text>
+  <rect x="910" y="240" width="180" height="34" rx="6" fill="#120904" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="925" y="262" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="11">Tonight, 8:00 PM ⏰</text>
+  <rect x="710" y="290" width="380" height="34" rx="6" fill="#120904" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="725" y="312" fill="#78716c" font-family="system-ui, sans-serif" font-size="11">Special Requests (Outdoor, Anniversary)</text>
+  <rect x="710" y="340" width="380" height="42" rx="8" fill="url(#warm-orange)"/>
+  <text x="900" y="366" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="600" text-anchor="middle">Find Table Availability →</text>
+
+  <!-- 3 Culinary Cards -->
+  <rect x="90" y="445" width="320" height="205" rx="10" fill="#180e07" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <rect x="105" y="460" width="290" height="90" rx="6" fill="#2c1a0e"/>
+  <circle cx="250" cy="505" r="32" fill="#ea580c" opacity="0.3"/>
+  <text x="250" y="512" fill="#fef3c7" font-size="24" text-anchor="middle">🍷</text>
+  <text x="105" y="580" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Sommelier Wine Vault</text>
+  <text x="105" y="605" fill="#a8a29e" font-family="system-ui, sans-serif" font-size="12">Curated vintage selections from Old World vineyards.</text>
+
+  <rect x="440" y="445" width="320" height="205" rx="10" fill="#180e07" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <rect x="455" y="460" width="290" height="90" rx="6" fill="#2c1a0e"/>
+  <circle cx="600" cy="505" r="32" fill="#ea580c" opacity="0.3"/>
+  <text x="600" y="512" fill="#fef3c7" font-size="24" text-anchor="middle">🥩</text>
+  <text x="455" y="580" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Truffle Smoked Tenderloin</text>
+  <text x="455" y="605" fill="#a8a29e" font-family="system-ui, sans-serif" font-size="12">Wood-fired artisan cut with rosemary reduction.</text>
+
+  <rect x="790" y="445" width="330" height="205" rx="10" fill="#180e07" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <rect x="805" y="460" width="300" height="90" rx="6" fill="#2c1a0e"/>
+  <circle cx="955" cy="505" r="32" fill="#ea580c" opacity="0.3"/>
+  <text x="955" y="512" fill="#fef3c7" font-size="24" text-anchor="middle">🌿</text>
+  <text x="805" y="580" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Artisan Degustation Menu</text>
+  <text x="805" y="605" fill="#a8a29e" font-family="system-ui, sans-serif" font-size="12">Seven-course sensory tasting experience.</text>
+</svg>

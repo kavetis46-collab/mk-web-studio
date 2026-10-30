@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad-fit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06120b"/>
+      <stop offset="50%" stop-color="#0a1a10"/>
+      <stop offset="100%" stop-color="#040b07"/>
+    </linearGradient>
+    <linearGradient id="neon-green" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4ade80"/>
+      <stop offset="100%" stop-color="#16a34a"/>
+    </linearGradient>
+    <filter id="glow-f" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg-grad-fit)"/>
+  <circle cx="950" cy="220" r="280" fill="#22c55e" opacity="0.1" filter="url(#glow-f)"/>
+  <circle cx="200" cy="500" r="200" fill="#4ade80" opacity="0.08" filter="url(#glow-f)"/>
+
+  <!-- Browser Frame -->
+  <rect x="50" y="40" width="1100" height="670" rx="16" fill="#08140c" stroke="rgba(74,222,128,0.2)" stroke-width="1.5"/>
+
+  <!-- Header -->
+  <rect x="50" y="40" width="1100" height="48" rx="16" fill="#0e1f14"/>
+  <rect x="50" y="72" width="1100" height="16" fill="#0e1f14"/>
+  <line x1="50" y1="88" x2="1150" y2="88" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <circle cx="80" cy="64" r="6" fill="#ef4444" opacity="0.8"/>
+  <circle cx="102" cy="64" r="6" fill="#eab308" opacity="0.8"/>
+  <circle cx="124" cy="64" r="6" fill="#22c55e" opacity="0.8"/>
+
+  <rect x="360" y="52" width="480" height="24" rx="6" fill="#050d08" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="600" y="68" fill="#86efac" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">preview.mkwebstudio.com/concepts/kratos-gym</text>
+
+  <!-- Concept Badge -->
+  <rect x="1030" y="52" width="90" height="24" rx="12" fill="rgba(74,222,128,0.15)" stroke="rgba(74,222,128,0.4)" stroke-width="1"/>
+  <circle cx="1044" cy="64" r="3.5" fill="#4ade80"/>
+  <text x="1080" y="68" fill="#4ade80" font-family="system-ui, sans-serif" font-size="10" font-weight="600" text-anchor="middle">CONCEPT</text>
+
+  <!-- Nav -->
+  <text x="90" y="135" fill="#ffffff" font-family="'Impact', system-ui, sans-serif" font-size="22" letter-spacing="1">KRATOS GYM</text>
+  <text x="800" y="134" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">PROGRAMS</text>
+  <text x="900" y="134" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">COACHES</text>
+  <rect x="980" y="118" width="140" height="32" rx="6" fill="#22c55e"/>
+  <text x="1050" y="138" fill="#051a0b" font-family="system-ui, sans-serif" font-size="11" font-weight="800" text-anchor="middle">CLAIM 1-DAY PASS</text>
+
+  <!-- Hero Content inside mock -->
+  <text x="90" y="200" fill="#4ade80" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="2">HIGH PERFORMANCE ATHLETICS &amp; RECOVERY</text>
+  <text x="90" y="250" fill="#ffffff" font-family="system-ui, sans-serif" font-size="38" font-weight="900" letter-spacing="-0.5">UNLEASH YOUR</text>
+  <text x="90" y="295" fill="url(#neon-green)" font-family="system-ui, sans-serif" font-size="38" font-weight="900" letter-spacing="-0.5">PEAK POTENTIAL.</text>
+  <text x="90" y="335" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14">Olympic lifting platforms, functional turf, infrared saunas, and custom athlete coaching.</text>
+
+  <!-- Right Visual inside mock -->
+  <rect x="680" y="170" width="440" height="240" rx="14" fill="#0e2315" stroke="rgba(74,222,128,0.25)" stroke-width="1.5"/>
+  <text x="710" y="205" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="800">FREE VIP TRIAL PASS</text>
+  <text x="710" y="225" fill="#86efac" font-family="system-ui, sans-serif" font-size="11">Experience our facility with a 60-min personal coaching pass:</text>
+  <rect x="710" y="240" width="380" height="34" rx="6" fill="#06120a" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="725" y="262" fill="#86efac" font-family="system-ui, sans-serif" font-size="11">Your Name</text>
+  <rect x="710" y="285" width="380" height="34" rx="6" fill="#06120a" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="725" y="307" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Mobile Number (WhatsApp Pass Sent Here)</text>
+  <rect x="710" y="335" width="380" height="42" rx="8" fill="url(#neon-green)"/>
+  <text x="900" y="361" fill="#04180a" font-family="system-ui, sans-serif" font-size="13" font-weight="800" text-anchor="middle">GET INSTANT PASS ACCESS →</text>
+
+  <!-- 3 Training Program Cards -->
+  <rect x="90" y="445" width="320" height="205" rx="10" fill="#0c1d12" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <circle cx="130" cy="485" r="20" fill="rgba(74,222,128,0.15)"/>
+  <text x="130" y="492" fill="#4ade80" font-size="16" text-anchor="middle">⚡</text>
+  <text x="165" y="488" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="800">HYBRID HYROX TRAINING</text>
+  <text x="110" y="525" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">High-endurance functional fitness combining rowers, sled pushes, and wall balls.</text>
+  <text x="110" y="615" fill="#4ade80" font-family="system-ui, sans-serif" font-size="11" font-weight="700">View Schedule →</text>
+
+  <rect x="440" y="445" width="320" height="205" rx="10" fill="#0c1d12" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <circle cx="480" cy="485" r="20" fill="rgba(74,222,128,0.15)"/>
+  <text x="480" y="492" fill="#4ade80" font-size="16" text-anchor="middle">🏋️</text>
+  <text x="515" y="488" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="800">STRENGTH &amp; POWERLIFTING</text>
+  <text x="460" y="525" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Eleiko certified barbells, calibrated steel plates, and Olympic competition racks.</text>
+  <text x="460" y="615" fill="#4ade80" font-family="system-ui, sans-serif" font-size="11" font-weight="700">View Schedule →</text>
+
+  <rect x="790" y="445" width="330" height="205" rx="10" fill="#0c1d12" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <circle cx="830" cy="485" r="20" fill="rgba(74,222,128,0.15)"/>
+  <text x="830" y="492" fill="#4ade80" font-size="16" text-anchor="middle">❄️</text>
+  <text x="865" y="488" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="800">RECOVERY &amp; CRYOTHERAPY</text>
+  <text x="810" y="525" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Cold plunges, NormaTec compression boots, and infrared sauna suites.</text>
+  <text x="810" y="615" fill="#4ade80" font-family="system-ui, sans-serif" font-size="11" font-weight="700">View Schedule →</text>
+</svg>

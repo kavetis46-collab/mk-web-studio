@@ -11,7 +11,7 @@ export const siteConfig = {
   },
 
   contact: {
-    email: 'contact@mkwebstudio.com', // Editable placeholder
+    email: 'mkwebstdio@gmail.com', // Official studio email
     phoneDisplay: '+91 91821 26238', // Updated official contact
     phoneRaw: '919182126238', // Country code 91 + 10-digit number 9182126238
     location: 'Hyderabad, Telangana, India',

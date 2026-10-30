@@ -73,14 +73,14 @@ All agency details, phone numbers, email addresses, pricing tiers, services, and
 // src/config/siteConfig.ts
 export const siteConfig = {
   contact: {
-    email: 'your-email@mkwebstudio.com',
-    phoneDisplay: '+91 98765 43210',
-    phoneRaw: '919876543210',
+    email: 'mkwebstdio@gmail.com',
+    phoneDisplay: '+91 91821 26238',
+    phoneRaw: '919182126238',
     location: 'Hyderabad, Telangana, India',
     // ...
   },
   whatsapp: {
-    number: '919876543210', // Set your active WhatsApp phone number here
+    number: '919182126238', // Active studio WhatsApp number
     defaultMessage: "Hello MK Web Studio! I'm interested in creating a website for my business...",
   },
   // ...

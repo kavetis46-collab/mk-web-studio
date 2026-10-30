@@ -74,7 +74,7 @@ export const PrivacyPolicyModal: React.FC<PrivacyPolicyModalProps> = ({ isOpen, 
             4. Contact Information
           </h4>
           <p>
-            If you have questions or require further information regarding our privacy practices, please contact us at <strong>contact@mkwebstudio.com</strong> or via WhatsApp at our official studio contact.
+            If you have questions or require further information regarding our privacy practices, please contact us at <strong>mkwebstdio@gmail.com</strong> or via WhatsApp at our official studio contact.
           </p>
         </div>
 

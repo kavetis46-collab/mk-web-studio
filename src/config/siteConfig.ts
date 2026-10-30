@@ -12,8 +12,8 @@ export const siteConfig = {
 
   contact: {
     email: 'contact@mkwebstudio.com', // Editable placeholder
-    phoneDisplay: '+91 98765 43210', // Editable placeholder
-    phoneRaw: '919876543210', // Editable placeholder (without + for WhatsApp URL)
+    phoneDisplay: '+91 91821 26238', // Updated official contact
+    phoneRaw: '919182126238', // Country code 91 + 10-digit number 9182126238
     location: 'Hyderabad, Telangana, India',
     internationalAvailability: 'Available for Worldwide & International Projects',
     businessHours: 'Monday – Saturday: 10:00 AM – 7:30 PM IST',
@@ -21,8 +21,8 @@ export const siteConfig = {
   },
 
   whatsapp: {
-    number: '919876543210', // Editable WhatsApp phone number
-    isConfigured: true, // Toggle to false to display fallback contact modal instead of direct wa.me
+    number: '919182126238', // Country code 91 + 10-digit number 9182126238
+    isConfigured: true,
     defaultMessage: "Hello MK Web Studio! I'm interested in creating a website for my business. Could you share more details?",
   },
 

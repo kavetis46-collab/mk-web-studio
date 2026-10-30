@@ -73,7 +73,7 @@ export const siteConfig = {
       ],
       idealFor: 'Consultancies, corporate firms, clinics, architecture studios, and established local enterprises.',
       timeline: '7 to 14 business days',
-      startingPrice: '₹9,999',
+      startingPrice: '₹9,999 ($139 USD)',
     },
     {
       id: 'landing-page',
@@ -90,7 +90,7 @@ export const siteConfig = {
       ],
       idealFor: 'Product launches, coaching programs, event tickets, Google/Meta Ads campaigns, and new service offerings.',
       timeline: '3 to 5 business days',
-      startingPrice: '₹4,999',
+      startingPrice: '₹4,999 ($69 USD)',
     },
     {
       id: 'ecommerce',
@@ -107,7 +107,7 @@ export const siteConfig = {
       ],
       idealFor: 'Retail brands, boutique shops, artisan makers, fashion labels, and direct-to-consumer businesses.',
       timeline: '14 to 21 business days',
-      startingPrice: '₹19,999',
+      startingPrice: '₹19,999 ($279 USD)',
     },
     {
       id: 'portfolio',
@@ -124,7 +124,7 @@ export const siteConfig = {
       ],
       idealFor: 'Interior designers, architects, photographers, creative directors, fashion designers, and visual artists.',
       timeline: '7 to 10 business days',
-      startingPrice: '₹9,999',
+      startingPrice: '₹9,999 ($139 USD)',
     },
     {
       id: 'redesign',
@@ -141,7 +141,7 @@ export const siteConfig = {
       ],
       idealFor: 'Businesses with 3+ year old websites that look dated or lose traffic due to poor mobile responsiveness.',
       timeline: '7 to 14 business days',
-      startingPrice: '₹8,999',
+      startingPrice: '₹8,999 ($119 USD)',
     },
     {
       id: 'maintenance',
@@ -158,7 +158,7 @@ export const siteConfig = {
       ],
       idealFor: 'Active businesses wanting peace of mind, continuous security, and fast content turnaround without hiring full-time staff.',
       timeline: 'Ongoing Monthly Support',
-      startingPrice: '₹2,499 / mo',
+      startingPrice: '₹2,499 / mo ($35 USD / mo)',
     },
   ] as Service[],
 
@@ -487,13 +487,13 @@ export const siteConfig = {
       id: 6,
       category: 'pricing',
       question: 'How much does a website cost?',
-      answer: 'Our transparent packages start at ₹4,999 for Starter landing pages, ₹9,999 for our popular Professional business package, and ₹19,999 for full-featured Premium websites. Final pricing depends on specific custom features, integrations, and content scope.',
+      answer: 'Our transparent packages start at ₹4,999 ($69 USD) for Starter landing pages, ₹9,999 ($139 USD) for our popular Professional business package, and ₹19,999 ($279 USD) for full-featured Premium websites. Final pricing depends on specific custom features, integrations, and content scope.',
     },
     {
       id: 7,
       category: 'process',
       question: 'Do you provide website maintenance?',
-      answer: 'Yes! We offer monthly maintenance packages starting at ₹2,499/month. This covers security audits, routine text and portfolio additions, uptime checks, and priority technical support whenever you need assistance.',
+      answer: 'Yes! We offer monthly maintenance packages starting at ₹2,499 / month ($35 USD / month). This covers security audits, routine text and portfolio additions, uptime checks, and priority technical support whenever you need assistance.',
     },
     {
       id: 8,

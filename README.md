@@ -12,7 +12,7 @@ MK Web Studio is a premier, dark-themed, AI-assisted digital agency website engi
 - **3D WebGL Hero Canvas**: Custom hardware-accelerated Three.js icosahedron core, celestial orbit rings, and 450+ particle stardust galaxy with real-time mouse-tracking parallax.
 - **Interactive Hologram & Telemetry HUD**: Live 3D WebGL torus visual and responsive device simulation in the About section.
 - **Featured Projects Showcase**:
-  - **Zaksy Studio**: Luxury Interior Design website with working live demo ([https://zaksy-studio-website.netlify.app/](https://zaksy-studio-website.netlify.app/)).
+  - **Zaksy Studio**: Luxury Interior Architecture & Spatial Design website concept with minimalist aesthetics.
   - **Dental Clinic Concept**: Interactive healthcare prototype with online appointment request workflows.
   - **Restaurant Dining Concept**: Fine dining menu showcase and digital table reservation channel.
   - **Construction Infra Concept**: Civil infrastructure tender and industrial specifications showcase.

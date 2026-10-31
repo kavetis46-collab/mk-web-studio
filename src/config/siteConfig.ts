@@ -170,8 +170,8 @@ export const siteConfig = {
       categorySlug: 'interior',
       tagline: 'Luxury Interior Architecture & Spatial Design',
       description: 'Premium interior design website concept showcasing residential, commercial and luxury interior projects with minimalist aesthetics, fluid gallery transitions, and an elegant consultation enquiry system.',
-      isLive: true,
-      liveUrl: 'https://zaksy-studio-website.netlify.app/',
+      isLive: false,
+      demoUrl: '#concept-zaksy',
       features: [
         'Luxury editorial layout with dark ambient tones',
         'Filterable portfolio (Living, Commercial, Luxury Penthouse)',

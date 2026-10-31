@@ -59,7 +59,7 @@ export const WhyChooseUsSection: React.FC = () => {
           {siteConfig.whyChooseUs.map((item, idx) => (
             <div
               key={item.id}
-              className="group relative rounded-2xl glass-card p-7 border border-white/10 hover:border-blue-500/30 transition-all duration-300 hover:bg-white/[0.04] hover:-translate-y-1"
+              className="group relative rounded-2xl glass-card p-7 border border-white/10 hover:border-blue-500/30 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:bg-white/[0.04] hover:-translate-y-1.5"
             >
               <div className="flex items-center justify-between mb-5">
                 <div className="p-3 rounded-xl bg-white/[0.03] border border-white/10 group-hover:scale-110 group-hover:bg-blue-500/10 transition-all duration-300">

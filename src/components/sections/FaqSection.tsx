@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { siteConfig } from '../../config/siteConfig';
+import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, HelpCircle, MessageSquare } from 'lucide-react';
 
 export const FaqSection: React.FC = () => {
@@ -67,14 +68,24 @@ export const FaqSection: React.FC = () => {
                   </div>
                 </button>
 
-                {/* Answer Area */}
-                {isOpen && (
-                  <div className="px-5 sm:px-6 pb-6 pt-1 text-sm sm:text-base text-slate-300 leading-relaxed border-t border-white/5 animate-in fade-in duration-200">
-                    <p className="pl-6 border-l-2 border-blue-500/40">
-                      {faq.answer}
-                    </p>
-                  </div>
-                )}
+                {/* Animated Answer Area */}
+                <AnimatePresence initial={false}>
+                  {isOpen && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+                      className="overflow-hidden"
+                    >
+                      <div className="px-5 sm:px-6 pb-6 pt-1 text-sm sm:text-base text-slate-300 leading-relaxed border-t border-white/5">
+                        <p className="pl-6 border-l-2 border-blue-500/40">
+                          {faq.answer}
+                        </p>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
             );
           })}

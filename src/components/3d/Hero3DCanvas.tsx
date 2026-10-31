@@ -174,22 +174,26 @@ export const Hero3DCanvas: React.FC = () => {
       const elapsedTime = clock.getElapsedTime();
 
       if (!prefersReducedMotion) {
-        // Smooth mouse lerping
-        mouseX += (targetX - mouseX) * 0.05;
-        mouseY += (targetY - mouseY) * 0.05;
+        // Ultra-smooth mouse lerping
+        mouseX += (targetX - mouseX) * 0.035;
+        mouseY += (targetY - mouseY) * 0.035;
 
-        // Base idle rotation + mouse tilt
-        mainGroup.rotation.y = elapsedTime * 0.15 + mouseX * 0.8;
-        mainGroup.rotation.x = Math.sin(elapsedTime * 0.2) * 0.15 + mouseY * 0.8;
+        // Base idle rotation + subtle mouse tilt
+        mainGroup.rotation.y = elapsedTime * 0.12 + mouseX * 0.6;
+        mainGroup.rotation.x = Math.sin(elapsedTime * 0.15) * 0.12 + mouseY * 0.6;
+
+        // Subtle organic breathing scale on inner core
+        const breathe = 1 + Math.sin(elapsedTime * 0.8) * 0.03;
+        innerMesh.scale.set(breathe, breathe, breathe);
 
         // Counter-rotations for multi-dimensional depth
-        wireframeMesh.rotation.z = elapsedTime * 0.08;
-        ring1.rotation.z = elapsedTime * 0.25;
-        ring2.rotation.z = -elapsedTime * 0.2;
+        wireframeMesh.rotation.z = elapsedTime * 0.06;
+        ring1.rotation.z = elapsedTime * 0.18;
+        ring2.rotation.z = -elapsedTime * 0.15;
 
         // Stardust particle field subtle orbital spin
-        particles.rotation.y = elapsedTime * 0.04;
-        particles.rotation.x = Math.cos(elapsedTime * 0.03) * 0.05;
+        particles.rotation.y = elapsedTime * 0.03;
+        particles.rotation.x = Math.cos(elapsedTime * 0.02) * 0.04;
       }
 
       renderer.render(scene, camera);

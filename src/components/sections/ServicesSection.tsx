@@ -79,7 +79,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onPreselectSer
           {siteConfig.services.map((service, index) => (
             <div
               key={service.id}
-              className="group relative rounded-2xl glass-card p-7 border border-white/10 hover:border-blue-500/40 transition-all duration-300 flex flex-col justify-between hover:bg-white/[0.04] hover:-translate-y-1 shadow-lg hover:shadow-2xl hover:shadow-blue-500/10"
+              className="group relative rounded-2xl glass-card p-7 border border-white/10 hover:border-blue-500/40 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] flex flex-col justify-between hover:bg-white/[0.04] hover:-translate-y-1.5 shadow-lg hover:shadow-2xl hover:shadow-blue-500/15"
             >
               {/* Subtle top card index badge */}
               <div className="flex items-center justify-between mb-6">

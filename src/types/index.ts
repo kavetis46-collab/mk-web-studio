@@ -43,6 +43,7 @@ export interface PricingPlan {
   badge?: string;
   priceINR: number;
   priceUSD: number;
+  scope?: string;
   description: string;
   popular?: boolean;
   features: string[];

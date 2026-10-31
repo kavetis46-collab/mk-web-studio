@@ -7,7 +7,7 @@ interface PricingSectionProps {
 }
 
 export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPlan }) => {
-  const [currency, setCurrency] = useState<'INR' | 'USD'>('INR');
+  const [currency, setCurrency] = useState<'USD' | 'INR'>('USD');
 
   const handleChoosePlan = (planName: string, priceText: string) => {
     if (onSelectPlan) {
@@ -39,11 +39,21 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPlan }) 
             </span>
           </h2>
           <p className="mt-5 text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
-            Choose a predictable development tier tailored to your business scale. From fast-launch landing pages to bespoke digital flagship platforms.
+            Choose a predictable development tier tailored to your business scale. From fast-launch 1-page websites to multi-page flagship digital platforms.
           </p>
 
-          {/* Currency Switcher (INR for Indian Businesses, USD for International Clients) */}
+          {/* Currency Switcher */}
           <div className="mt-8 inline-flex items-center gap-1.5 p-1 rounded-xl bg-white/[0.04] border border-white/10 backdrop-blur-md">
+            <button
+              onClick={() => setCurrency('USD')}
+              className={`px-4 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                currency === 'USD'
+                  ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-md'
+                  : 'text-slate-400 hover:text-white'
+              }`}
+            >
+              USD ($) Standard
+            </button>
             <button
               onClick={() => setCurrency('INR')}
               className={`px-4 py-1.5 rounded-lg text-xs font-bold transition-all ${
@@ -53,16 +63,6 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPlan }) 
               }`}
             >
               INR (₹) Domestic
-            </button>
-            <button
-              onClick={() => setCurrency('USD')}
-              className={`px-4 py-1.5 rounded-lg text-xs font-bold transition-all ${
-                currency === 'USD'
-                  ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-md'
-                  : 'text-slate-400 hover:text-white'
-              }`}
-            >
-              USD ($) International
             </button>
           </div>
         </div>
@@ -90,7 +90,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPlan }) 
 
                 {/* Plan Info */}
                 <div>
-                  <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center justify-between mb-2">
                     <h3 className="font-heading text-xl font-bold text-white tracking-wide">
                       {plan.name}
                     </h3>
@@ -101,30 +101,38 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPlan }) 
                     )}
                   </div>
 
+                  {/* Scope Badge */}
+                  {plan.scope && (
+                    <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-blue-500/10 border border-blue-500/25 text-blue-300 text-xs font-semibold mb-3">
+                      <span>Scope: {plan.scope}</span>
+                    </div>
+                  )}
+
                   <p className="text-xs text-slate-400 mb-6 min-h-[36px]">
                     {plan.description}
                   </p>
 
-                {/* Price Tag with both Rupees and Dollars */}
-                <div className="mb-6 pb-6 border-b border-white/10">
-                  <span className="text-xs text-slate-400 uppercase tracking-wider block mb-1.5">
-                    Starting Investment
-                  </span>
-                  <div className="flex items-baseline gap-2.5 flex-wrap">
-                    <span className="font-heading text-4xl sm:text-5xl font-black text-white">
-                      {currency === 'INR' ? `₹${plan.priceINR.toLocaleString('en-IN')}` : `$${plan.priceUSD}`}
+                  {/* Price Tag with both Dollars and Rupees */}
+                  <div className="mb-6 pb-6 border-b border-white/10">
+                    <span className="text-xs text-slate-400 uppercase tracking-wider block mb-1.5">
+                      Starting Investment
                     </span>
-                    <span className="text-xs sm:text-sm font-bold px-2.5 py-1 rounded-lg bg-blue-500/15 border border-blue-500/30 text-blue-300">
-                      {currency === 'INR' ? `$${plan.priceUSD} USD` : `₹${plan.priceINR.toLocaleString('en-IN')} INR`}
-                    </span>
+                    <div className="flex items-baseline gap-2.5 flex-wrap">
+                      <span className="font-heading text-4xl sm:text-5xl font-black text-white">
+                        {currency === 'USD' ? `$${plan.priceUSD}` : `₹${plan.priceINR.toLocaleString('en-IN')}`}
+                      </span>
+                      <span className="text-xs sm:text-sm font-bold px-2.5 py-1 rounded-lg bg-blue-500/15 border border-blue-500/30 text-blue-300">
+                        {currency === 'USD' ? `₹${plan.priceINR.toLocaleString('en-IN')} INR` : `$${plan.priceUSD} USD`}
+                      </span>
+                    </div>
+                    <div className="text-[11px] text-slate-400 mt-2 flex items-center gap-2 flex-wrap">
+                      <span className="text-purple-300 font-semibold">${plan.priceUSD} USD</span>
+                      <span>•</span>
+                      <span className="text-emerald-400 font-medium">₹{plan.priceINR.toLocaleString('en-IN')} INR</span>
+                      <span>•</span>
+                      <span className="text-slate-300 font-medium">{plan.scope}</span>
+                    </div>
                   </div>
-                  <div className="text-[11px] text-slate-400 mt-2 flex items-center gap-2 flex-wrap">
-                    <span className="text-emerald-400 font-medium">Rupees: ₹{plan.priceINR.toLocaleString('en-IN')}</span>
-                    <span>•</span>
-                    <span className="text-purple-300 font-medium">Dollars: ${plan.priceUSD} USD</span>
-                    <span className="text-slate-500">/ project</span>
-                  </div>
-                </div>
 
                   {/* Feature Checklist */}
                   <div className="space-y-3 mb-8">
@@ -143,7 +151,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPlan }) 
                 {/* CTA Action */}
                 <div>
                   <button
-                    onClick={() => handleChoosePlan(plan.name, `₹${plan.priceINR.toLocaleString('en-IN')} / $${plan.priceUSD} USD`)}
+                    onClick={() => handleChoosePlan(plan.name, `$${plan.priceUSD} USD / ₹${plan.priceINR.toLocaleString('en-IN')}`)}
                     className={`w-full py-3.5 rounded-xl font-semibold text-xs sm:text-sm flex items-center justify-center gap-2 cursor-pointer transition-all duration-300 ${
                       isPopular
                         ? 'bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white shadow-xl shadow-purple-600/30 hover:shadow-purple-600/50 hover:brightness-110'

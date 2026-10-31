@@ -73,7 +73,7 @@ export const siteConfig = {
       ],
       idealFor: 'Consultancies, corporate firms, clinics, architecture studios, and established local enterprises.',
       timeline: '7 to 14 business days',
-      startingPrice: '₹9,999 ($139 USD)',
+      startingPrice: '$299 (₹24,999 INR)',
     },
     {
       id: 'landing-page',
@@ -90,7 +90,7 @@ export const siteConfig = {
       ],
       idealFor: 'Product launches, coaching programs, event tickets, Google/Meta Ads campaigns, and new service offerings.',
       timeline: '3 to 5 business days',
-      startingPrice: '₹4,999 ($69 USD)',
+      startingPrice: '$149 (₹12,499 INR)',
     },
     {
       id: 'ecommerce',
@@ -107,7 +107,7 @@ export const siteConfig = {
       ],
       idealFor: 'Retail brands, boutique shops, artisan makers, fashion labels, and direct-to-consumer businesses.',
       timeline: '14 to 21 business days',
-      startingPrice: '₹19,999 ($279 USD)',
+      startingPrice: '$499 (₹41,999 INR)',
     },
     {
       id: 'portfolio',
@@ -124,7 +124,7 @@ export const siteConfig = {
       ],
       idealFor: 'Interior designers, architects, photographers, creative directors, fashion designers, and visual artists.',
       timeline: '7 to 10 business days',
-      startingPrice: '₹9,999 ($139 USD)',
+      startingPrice: '$299 (₹24,999 INR)',
     },
     {
       id: 'redesign',
@@ -141,7 +141,7 @@ export const siteConfig = {
       ],
       idealFor: 'Businesses with 3+ year old websites that look dated or lose traffic due to poor mobile responsiveness.',
       timeline: '7 to 14 business days',
-      startingPrice: '₹8,999 ($119 USD)',
+      startingPrice: '$199 (₹16,499 INR)',
     },
     {
       id: 'maintenance',
@@ -158,7 +158,7 @@ export const siteConfig = {
       ],
       idealFor: 'Active businesses wanting peace of mind, continuous security, and fast content turnaround without hiring full-time staff.',
       timeline: 'Ongoing Monthly Support',
-      startingPrice: '₹2,499 / mo ($35 USD / mo)',
+      startingPrice: '$35 / mo (₹2,499 / mo)',
     },
   ] as Service[],
 
@@ -385,17 +385,18 @@ export const siteConfig = {
 
   pricingPlans: [
     {
-      id: 'starter',
-      name: 'STARTER',
-      priceINR: 4999,
-      priceUSD: 69,
-      description: 'Ideal for single-service businesses, campaigns, and individuals needing a fast, professional online launch.',
+      id: 'basic',
+      name: 'BASIC',
+      priceINR: 12499,
+      priceUSD: 149,
+      scope: '1-page website',
+      description: '1-page website engineered for single-offer businesses, campaigns, and fast professional launches.',
       popular: false,
       features: [
-        'Landing page (Single high-impact page)',
+        '1-page conversion-focused website',
         'Responsive layout (Desktop, tablet & mobile)',
         'Contact section with lead enquiry form',
-        'WhatsApp enquiry button integration',
+        'WhatsApp direct enquiry integration',
         'Basic SEO setup (Meta tags, title & indexing)',
         'Social media links integration',
         'Fast cloud deployment on Netlify'
@@ -405,18 +406,19 @@ export const siteConfig = {
         'Filterable project gallery',
         'Advanced custom 3D animations'
       ],
-      ctaText: 'Choose Starter',
+      ctaText: 'Choose Basic',
     },
     {
-      id: 'professional',
-      name: 'PROFESSIONAL',
+      id: 'standard',
+      name: 'STANDARD',
       badge: 'MOST POPULAR',
-      priceINR: 9999,
-      priceUSD: 139,
-      description: 'The complete digital agency package designed for established clinics, studios, architects and businesses.',
+      priceINR: 24999,
+      priceUSD: 299,
+      scope: 'Up to 5 pages',
+      description: 'Up to 5 pages bespoke business website designed for established clinics, studios, architects and businesses.',
       popular: true,
       features: [
-        'Multi-page business website (Up to 5 sections / pages)',
+        'Up to 5 pages custom multi-page architecture',
         'Custom bespoke design tailored to brand identity',
         'Interactive services section with details',
         'Project gallery / Portfolio showcase',
@@ -426,18 +428,19 @@ export const siteConfig = {
         'Smooth scroll micro-animations & glassmorphic cards',
         'Netlify deployment & handover guide'
       ],
-      ctaText: 'Choose Professional',
+      ctaText: 'Choose Standard',
     },
     {
       id: 'premium',
       name: 'PREMIUM',
       badge: 'FULL SUITE',
-      priceINR: 19999,
-      priceUSD: 279,
-      description: 'For ambitious businesses and international companies seeking high-end visuals, advanced animations, and custom features.',
+      priceINR: 41999,
+      priceUSD: 499,
+      scope: 'Up to 8 pages',
+      description: 'Up to 8 pages advanced custom website for ambitious businesses seeking high-end visuals, animations, and custom features.',
       popular: false,
       features: [
-        'Advanced custom website (Up to 8+ pages / deep sections)',
+        'Up to 8 pages advanced custom website',
         'Premium animations (Framer Motion + Three.js visual elements)',
         'Advanced filterable project gallery with detailed modal views',
         'Additional custom pages (Case studies, Careers, Calculator)',
@@ -457,7 +460,7 @@ export const siteConfig = {
       id: 1,
       category: 'timeline',
       question: 'How long does it take to build a website?',
-      answer: 'Typically, a Starter landing page is delivered within 3 to 5 business days, while a standard multi-page Professional business website takes 7 to 14 business days. Custom Premium websites with 3D or extensive galleries generally require 2 to 3 weeks depending on the promptness of content feedback.',
+      answer: 'Typically, a Basic 1-page website is delivered within 3 to 5 business days, while a Standard website (up to 5 pages) takes 7 to 10 business days. Custom Premium websites (up to 8 pages) with 3D or extensive galleries generally require 2 to 3 weeks depending on the promptness of content feedback.',
     },
     {
       id: 2,
@@ -487,13 +490,13 @@ export const siteConfig = {
       id: 6,
       category: 'pricing',
       question: 'How much does a website cost?',
-      answer: 'Our transparent packages start at ₹4,999 ($69 USD) for Starter landing pages, ₹9,999 ($139 USD) for our popular Professional business package, and ₹19,999 ($279 USD) for full-featured Premium websites. Final pricing depends on specific custom features, integrations, and content scope.',
+      answer: 'Our transparent packages start at $149 (₹12,499 INR) for our Basic 1-page website, $299 (₹24,999 INR) for our popular Standard package (up to 5 pages), and $499 (₹41,999 INR) for our full-featured Premium suite (up to 8 pages). Final pricing depends on specific custom features, integrations, and content scope.',
     },
     {
       id: 7,
       category: 'process',
       question: 'Do you provide website maintenance?',
-      answer: 'Yes! We offer monthly maintenance packages starting at ₹2,499 / month ($35 USD / month). This covers security audits, routine text and portfolio additions, uptime checks, and priority technical support whenever you need assistance.',
+      answer: 'Yes! We offer monthly maintenance packages starting at $35 / month (₹2,499 / month). This covers security audits, routine text and portfolio additions, uptime checks, and priority technical support whenever you need assistance.',
     },
     {
       id: 8,

@@ -19,7 +19,7 @@ MK Web Studio is a premier, dark-themed, AI-assisted digital agency website engi
   - **Fitness Studio Concept**: High-performance athletics and VIP trial pass booking portal.
 - **Interactive Capabilities**: 6 core services with in-depth deliverable modals.
 - **5-Stage Work Process**: Horizontal animated milestone timeline on desktop, vertical responsive accordion on mobile.
-- **Transparent Pricing**: Starter (₹4,999 / $69 USD), Professional (₹9,999 / $139 USD - Popular), and Premium (₹19,999 / $279 USD) with an instant INR/USD currency toggle for international clients.
+- **Transparent Pricing**: Basic ($149 / ₹12,499 - 1-page website), Standard ($299 / ₹24,999 - Up to 5 pages, Most Popular), and Premium ($499 / ₹41,999 - Up to 8 pages) with an instant USD/INR currency toggle for domestic and international clients.
 - **Netlify Forms Ready**: Production contact form with client-side validation and Netlify Forms integration (`data-netlify="true"`).
 - **Persistent WhatsApp Trigger**: Floating WhatsApp widget with prefilled enquiry message generator.
 - **SEO & Performance Engineered**: Sub-second load times, OpenGraph metadata, `sitemap.xml`, `robots.txt`, and clean semantic markup.

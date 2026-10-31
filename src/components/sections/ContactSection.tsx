@@ -31,7 +31,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
     phone: '',
     category: 'Interior Design',
     requirement: 'Business Website Development',
-    budget: 'Professional (₹9,999 / $139 USD)',
+    budget: 'Standard ($299 / ₹24,999) — Up to 5 pages',
     message: '',
   });
 
@@ -471,9 +471,9 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                     onChange={handleChange}
                     className="w-full px-4 py-2.5 rounded-xl bg-[#0b0c13] border border-white/10 text-sm text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
                   >
-                    <option value="Starter (₹4,999 / $69 USD)">Starter — ₹4,999 / $69 USD</option>
-                    <option value="Professional (₹9,999 / $139 USD)">Professional — ₹9,999 / $139 USD (Most Popular)</option>
-                    <option value="Premium (₹19,999 / $279 USD)">Premium — ₹19,999 / $279 USD</option>
+                    <option value="Basic ($149 / ₹12,499) — 1-page website">Basic — $149 (₹12,499) • 1-page website</option>
+                    <option value="Standard ($299 / ₹24,999) — Up to 5 pages">Standard — $299 (₹24,999) • Up to 5 pages (Most Popular)</option>
+                    <option value="Premium ($499 / ₹41,999) — Up to 8 pages">Premium — $499 (₹41,999) • Up to 8 pages</option>
                     <option value="Custom Enterprise Scope">Custom Enterprise Scope</option>
                   </select>
                 </div>
